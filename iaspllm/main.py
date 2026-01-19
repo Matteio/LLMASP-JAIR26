@@ -329,7 +329,7 @@ def llmasp_command_run_selected(
     evaluate_model(app_options.model, results, app_options.stats_file)
     console.print('----------------------------------------Done---------------------------------------------')
 
-def _llmasp_command_full_test_worker(quantity: Optional[int], patched: bool, output_format: str, a1_prompt: bool):
+def _llmasp_command_full_test_worker(quantity: Optional[int], output_format: str, a1_prompt: bool):
     """Worker function for llmasp-full-test logic."""
     assert app_options is not None
     with console.status("Loading data..."):
@@ -383,7 +383,7 @@ def llmasp_command_full_test(
 def llama_command_run_selected(
         problem_name: str = typer.Option(..., "--problem-name", "-pn", help="Problem name"),
         quantity: int = typer.Option(..., "--quantity", "-q", help="Instances quantity"),
-        prompt_level: Level = typer.Option(Level.ten, "--prompt-level", "-pl", show_default=False,
+        prompt_level: Level = typer.Option(Level.five, "--prompt-level", "-pl", show_default=False,
                                            help="1-Text \n2-Text+description \n3-Text+format \n4-Text+Encoding \n5-Text+description+format"),
         random_instances: bool = typer.Option(False, "--random-instances", "-rn",
                                               help="Take random instances"),
@@ -442,7 +442,7 @@ def _llama_command_full_test_worker(prompt_level: Level, quantity: Optional[int]
 
 @app.command(name="llama-full-test")
 def llama_command_full_test(
-    prompt_level: Level = typer.Option(Level.ten, "--prompt-level", "-pl", show_default=False,
+    prompt_level: Level = typer.Option(Level.five, "--prompt-level", "-pl", show_default=False,
                                     help="Prompt level selection"),
     quantity: Optional[int] = typer.Option(None, "--quantity", "-q", help="Numero massimo di istanze per problema"),
 ):
@@ -718,7 +718,7 @@ def test_llama_dataset(model, server, ollama_key, data, prompt_level):
 def ollama_format_run_selected(
     problem_name: str = typer.Option(..., "--problem-name", "-pn", help="Problem name"),
     quantity: int = typer.Option(..., "--quantity", "-q", help="Instances quantity"),
-    prompt_level: Level = typer.Option(Level.eight, "--prompt-level", "-pl", show_default=False,
+    prompt_level: Level = typer.Option(Level.five, "--prompt-level", "-pl", show_default=False,
                                        help="1-Text \n2-Text+description \n3-Text+format \n4-Text+Encoding \n5-Text+description+format"),
     random_instances: bool = typer.Option(False, "--random-instances", "-rn",
                                          help="Take random instances"),
@@ -781,7 +781,7 @@ def _ollama_format_full_test_worker(prompt_level: Level, quantity: Optional[int]
 
 @app.command(name="ollama-format-full-test")
 def ollama_format_full_test(
-    prompt_level: Level = typer.Option(Level.eight, "--prompt-level", "-pl", show_default=False,
+    prompt_level: Level = typer.Option(Level.five, "--prompt-level", "-pl", show_default=False,
                                       help="Prompt level selection"),
     quantity: Optional[int] = typer.Option(None, "--quantity", "-q", help="Numero massimo di istanze per problema"),
     output_format: str = typer.Option(None, "--output-format", "-otf", 

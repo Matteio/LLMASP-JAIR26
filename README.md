@@ -60,7 +60,7 @@ run-experiment -m <model_name> -s <server> -bf specifications/behaviors/behavior
 
 Note on Knowledge Base: To run experiments involving the ASP Knowledge Base completion, append /asp to the application path (e.g., -af specifications/applications/asp).
 
-Vanilla LLM Experiments
+LLM Experiments
 
 1. Standard LLM
 
