@@ -33,12 +33,14 @@ run-experiment <required_options> <command> --help
 ### Prompt Strategies (A1 vs A2)
 
 The experiments rely on two main prompting strategies. You must configure the command flags accordingly:
-    - A1:
-        For LLMASP: Add the flag -a1 (or --a1_prompt).
-        For Vanilla LLM: Use prompt level 1 (-pl 1).
-    - A2:
-        For LLMASP: This is the default (do not use -a1).
-        For Vanilla LLM: Use higher prompt levels (e.g. -pl 10).
+    
+1. A1:
+- For LLMASP: Add the flag -a1 (or --a1_prompt).
+- For LLM: Use prompt level 3 (-pl 3).
+
+2. A2:
+- For LLMASP: This is the default (do not use -a1).
+- For LLM: Use higher prompt levels (e.g. -pl 5).
 
 ### LLMASP Experiments
 
