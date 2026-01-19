@@ -1,0 +1,6 @@
+Problem Name,Accuracy,Precision,Recall,F1 Score
+Labyrinth,0.98,0.98,0.96,0.97
+Nomystery,0.94,0.94,0.83,0.88
+Ricochet Robots,0.95,0.95,0.84,0.89
+Sokoban,0.83,0.83,0.81,0.82
+Overall Results,0.93,0.93,0.86,0.89

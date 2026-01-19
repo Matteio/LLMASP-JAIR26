@@ -1,0 +1,18 @@
+Problem Name,Accuracy,Precision,Recall,F1 Score
+Connected Maximum-density Still Life,1.00,1.00,1.00,1.00
+Crossing Minimization,0.68,0.68,0.68,0.68
+Graceful Graphs,1.00,1.00,1.00,1.00
+Graph Colouring,0.77,0.77,0.93,0.83
+Incremental Scheduling,0.76,0.76,0.95,0.84
+Knight Tour,0.98,0.98,1.00,0.99
+Knight Tour With Holes,1.00,1.00,1.00,1.00
+Labyrinth,1.00,1.00,1.00,1.00
+Maximal Clique Problem,0.99,0.99,1.00,0.99
+Nomystery,0.99,0.99,1.00,0.99
+Partner Units,1.00,1.00,1.00,1.00
+Permutation Pattern Matching,0.98,0.98,0.99,0.99
+Ricochet Robots,0.83,0.83,0.90,0.86
+Sokoban,0.91,0.91,0.98,0.95
+Stable Marriage,0.99,0.99,0.97,0.98
+Valves Location Problem,0.98,0.98,0.99,0.98
+Overall Results,0.93,0.93,0.96,0.94
