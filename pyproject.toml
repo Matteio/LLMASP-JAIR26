@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "iaspllm"
 version = "0.1.0"
-description = "Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language"
+description = "Integrating Answer Set Programming and Large Language Models for Reliable Structured Knowledge Extraction"
 authors = ["Matteo Capalbo <capalbo25@gmail.com>"]
 readme = "README.md"
 
