@@ -30,7 +30,7 @@ For further help with a single command use:
 run-experiment <required_options> <command> --help
 ```
 
-Prompt Strategies (A1 vs A2)
+### Prompt Strategies (A1 vs A2)
 
 The experiments rely on two main prompting strategies. You must configure the command flags accordingly:
     - A1:
@@ -40,7 +40,7 @@ The experiments rely on two main prompting strategies. You must configure the co
         For LLMASP: This is the default (do not use -a1).
         For Vanilla LLM: Use higher prompt levels (e.g. -pl 10).
 
-LLMASP Experiments
+### LLMASP Experiments
 
 1. Standard LLMASP (A2)
 
@@ -60,7 +60,7 @@ run-experiment -m <model_name> -s <server> -bf specifications/behaviors/behavior
 
 Note on Knowledge Base: To run experiments involving the ASP Knowledge Base completion, append /asp to the application path (e.g., -af specifications/applications/asp).
 
-LLM Experiments
+### LLM Experiments
 
 1. Standard LLM
 
@@ -74,7 +74,7 @@ run-experiment -m <model_name> -s <server> -bf specifications/behaviors/behavior
 run-experiment -m <model_name> -s <server> -af specifications/applications ollama-format-full-test -otf <FORMAT> -pl <prompt_level>
 ```
 
-Single Instance Execution
+### Single Instance Execution
 
 - For running a single experiment or a subset, replace *-full-test with *-run-selected and specify the problem name and quantity.
 
@@ -82,7 +82,7 @@ Single Instance Execution
 run-experiment -m llama3.1:70b -bf specifications/behaviors/behavior_second_report_v6.yml llmasp-run-selected -pn "Graph Coloring" -q 1
 ```
 
-Energy and Performance Tracking
+### Energy and Performance Tracking
 
 The framework includes a built-in mechanism to monitor execution time and GPU energy consumption during experiments (If you have AMD GPUs). This utilizes rocm-smi to track energy usage (in Joules/uJ).
 
